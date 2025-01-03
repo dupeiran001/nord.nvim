@@ -3,7 +3,7 @@ local colors = require("onenord.colors").load()
 local onenord = {}
 
 onenord.normal = {
-  a = { fg = colors.bg, bg = colors.cyan, gui = "bold" },
+  a = { fg = colors.bg, bg = colors.blue, gui = "bold" },
   b = { fg = colors.cyan, bg = colors.highlight },
   c = { fg = colors.fg, bg = colors.active },
 }
