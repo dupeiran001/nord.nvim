@@ -40,7 +40,7 @@ function M.setup(opts)
   colors.blue5 = colors.nord8_gui
   colors.blue6 = colors.nord7_gui
   colors.blue7 = colors.nord3_gui
-  colors.comment = colors.nord3_gui_bright
+  colors.comment = colors.nord3_gui
   colors.cyan = colors.nord8_gui
   colors.dark3 = colors.nord3_gui
   colors.dark5 = colors.nord3_gui
