@@ -79,7 +79,7 @@ function M.setup(opts)
   colors.git.ignore = colors.nord3_gui
   colors.black = colors.nord0_gui
   colors.border_highlight = colors.nord3_gui_bright
-  colors.border = colors.black
+  colors.border = colors.nord3_gui_bright
 
   -- Popups and statusline always get a dark background
   colors.bg_popup = colors.nord0_gui

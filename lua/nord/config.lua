@@ -1,5 +1,7 @@
 local M = {}
 
+M.version = "0.1.0"
+
 ---@class nord.Config
 M.defaults = {
   style = 'dark',         -- The style can ether be 'light' or 'dark'
@@ -16,8 +18,8 @@ M.defaults = {
     -- Value is any valid attr-list value for `:help nvim_set_hl`
     comments = { italic = true },
     keywords = { italic = true },
-    functions = {},
-    variables = {},
+    functions = { italic = true },
+    variables = { bold = true },
     -- Background styles. Can be "dark", "transparent" or "normal"
     sidebars = "dark", -- style for sidebars, see below
     floats = "dark",   -- style for floating windows
@@ -43,7 +45,7 @@ M.defaults = {
     all = package.loaded.lazy == nil,
     -- uses your plugin manager to automatically enable needed plugins
     -- currently only lazy.nvim is supported
-    auto = true,
+    auto = false,
     -- add any plugins here that you want to enable
     -- telescope = true,
   },
