@@ -23,8 +23,6 @@ function M.load(opts)
 end
 
 M.setup = config.setup
-M.bufferline = function()
-  return bufferline.bufferline
-end
+M.bufferline = bufferline
 
 return M

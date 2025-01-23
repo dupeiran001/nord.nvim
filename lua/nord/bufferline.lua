@@ -1,88 +1,306 @@
-local M = {}
-
-M.bufferline = {
-  fill = { bg = "#2e3440" },
-  background = { bg = "#2e3440" },
-
-  tab = { bg = "#2e3440" },
-  tab_selected = { bg = "#2e3440" },
-  tab_close = { bg = "#2e3440" },
-
-  tab_separator = { bg = "#2e3440", fg = "#4C566A" },
-  tab_separator_selected = { bg = "#2e3440", fg = "#81a1c1" },
-
-  close_button = { bg = "#2e3440" },
-  close_button_visible = { bg = "#2e3440" },
-  close_button_selected = { bg = "#2e3440" },
-
-  buffer = { bg = "#2e3440" },
-  buffer_visible = { bg = "#2e3440" },
-  buffer_selected = { bg = "#2e3440" },
-
-  numbers = { bg = "#2e3440" },
-  numbers_visible = { bg = "#2e3440" },
-  numbers_selected = { bg = "#2e3440" },
-
-  diagnostic = { bg = "#2e3440" },
-  diagnostic_visible = { bg = "#2e3440" },
-  diagnostic_selected = { bg = "#2e3440" },
-
-  hint = { bg = "#2e3440" },
-  hint_visible = { bg = "#2e3440" },
-  hint_selected = { bg = "#2e3440" },
-
-  hint_diagnostic = { bg = "#2e3440" },
-  hint_diagnostic_visible = { bg = "#2e3440" },
-  hint_diagnostic_selected = { bg = "#2e3440" },
-
-  info = { bg = "#2e3440" },
-  info_visible = { bg = "#2e3440" },
-  info_selected = { bg = "#2e3440" },
-
-  info_diagnostic = { bg = "#2e3440" },
-  info_diagnostic_visible = { bg = "#2e3440" },
-  info_diagnostic_selected = { bg = "#2e3440" },
-
-  warning = { bg = "#2e3440" },
-  warning_visible = { bg = "#2e3440" },
-  warning_selected = { bg = "#2e3440" },
-
-  warning_diagnostic = { bg = "#2e3440" },
-  warning_diagnostic_visible = { bg = "#2e3440" },
-  warning_diagnostic_selected = { bg = "#2e3440" },
-
-  error = { bg = "#2e3440" },
-  error_visible = { bg = "#2e3440" },
-  error_selected = { bg = "#2e3440" },
-
-  error_diagnostic = { bg = "#2e3440" },
-  error_diagnostic_visible = { bg = "#2e3440" },
-  error_diagnostic_selected = { bg = "#2e3440" },
-
-  duplicate = { bg = "#2e3440" },
-  duplicate_visible = { bg = "#2e3440" },
-  duplicate_selected = { bg = "#2e3440" },
-
-  separator = { bg = "#2e3440", fg = "#4C566A" },
-  separator_selected = { bg = "#2e3440" },
-  separator_visible = { bg = "#2e3440" },
-
-  modified = { bg = "#2e3440" },
-  modified_visible = { bg = "#2e3440" },
-  modified_selected = { bg = "#2e3440" },
-
-  indicator_selected = { bg = "#2e3440" },
-  indicator_visible = { bg = "#2e3440" },
-
-  pick = { bg = "#2e3440" },
-  pick_visible = { bg = "#2e3440" },
-  pick_selected = { bg = "#2e3440" },
-
-  offset_separator = { bg = "#2e3440" },
-
-  trunc_marker = { bg = "#2e3440" },
-
+local nord = {
+  --16 colors
+  nord0 = "#2E3440",        -- nord0 in palette
+  nord1 = "#3B4252",        -- nord1 in palette
+  nord2 = "#434C5E",        -- nord2 in palette
+  nord3 = "#4C566A",        -- nord3 in palette
+  nord3_bright = "#616E88", -- out of palette
+  nord4 = "#D8DEE9",        -- nord4 in palette
+  nord5 = "#E5E9F0",        -- nord5 in palette
+  nord6 = "#ECEFF4",        -- nord6 in palette
+  nord7 = "#8FBCBB",        -- nord7 in palette
+  nord8 = "#88C0D0",        -- nord8 in palette
+  nord9 = "#81A1C1",        -- nord9 in palette
+  nord10 = "#5E81AC",       -- nord10 in palette
+  nord11 = "#BF616A",       -- nord11 in palette
+  nord12 = "#D08770",       -- nord12 in palette
+  nord13 = "#EBCB8B",       -- nord13 in palette
+  nord14 = "#A3BE8C",       -- nord14 in palette
+  nord15 = "#B48EAD",       -- nord15 in palette
+  none = "NONE",
 }
 
-return M
-
+return {
+  fill = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  background = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  tab = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  tab_selected = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  tab_separator = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  tab_separator_selected = {
+    fg = nord.nord8,
+    bg = nord.nord0,
+    -- sp = ,
+    -- underline = '<colour-value-here>',
+  },
+  tab_close = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  close_button = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+  },
+  close_button_visible = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  close_button_selected = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  buffer_visible = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+  },
+  buffer_selected = {
+    fg = nord.nord8,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  numbers = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  numbers_visible = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  numbers_selected = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  diagnostic = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  diagnostic_visible = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  diagnostic_selected = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  hint = {
+    fg = nord.nord15,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  hint_visible = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  hint_selected = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  hint_diagnostic = {
+    fg = nord.nord15,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  hint_diagnostic_visible = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  hint_diagnostic_selected = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  info = {
+    fg = nord.nord14,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  info_visible = {
+    fg = nord.nord14,
+    bg = nord.nord0,
+  },
+  info_selected = {
+    fg = nord.nord14,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  info_diagnostic = {
+    fg = nord.nord14,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  info_diagnostic_visible = {
+    fg = nord.nord14,
+    bg = nord.nord0,
+  },
+  info_diagnostic_selected = {
+    fg = nord.nord14,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  warning = {
+    fg = nord.nord12,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  warning_visible = {
+    fg = nord.nord12,
+    bg = nord.nord0,
+  },
+  warning_selected = {
+    fg = nord.nord12,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  warning_diagnostic = {
+    fg = nord.nord12,
+    -- sp = '<colour-value-here>',
+    bg = nord.nord0,
+  },
+  warning_diagnostic_visible = {
+    fg = nord.nord12,
+    bg = nord.nord0,
+  },
+  warning_diagnostic_selected = {
+    fg = nord.nord12,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  error = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+  },
+  error_visible = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+  },
+  error_selected = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  error_diagnostic = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+  },
+  error_diagnostic_visible = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+  },
+  error_diagnostic_selected = {
+    fg = nord.nord11,
+    bg = nord.nord0,
+    -- sp = '<colour-value-here>',
+    bold = true,
+    italic = true,
+  },
+  modified = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  modified_visible = {
+    fg = nord.nord15,
+    bg = nord.nord0,
+  },
+  modified_selected = {
+    fg = nord.nord8,
+    bg = nord.nord0,
+  },
+  duplicate_selected = {
+    fg = nord.nord3_bright,
+    bg = nord.nord0,
+    italic = true,
+  },
+  duplicate_visible = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+    italic = true,
+  },
+  duplicate = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+    italic = true,
+  },
+  separator_selected = {
+    fg = nord.nord8,
+    bg = nord.nord0,
+    bold = true,
+  },
+  separator_visible = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+  },
+  separator = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+  },
+  indicator_visible = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  indicator_selected = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+  },
+  pick_selected = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  pick_visible = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  pick = {
+    fg = nord.nord4,
+    bg = nord.nord0,
+    bold = true,
+    italic = true,
+  },
+  offset_separator = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+  },
+  trunc_marker = {
+    fg = nord.nord3,
+    bg = nord.nord0,
+  }
+}

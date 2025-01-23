@@ -31,7 +31,7 @@ function M.setup(opts)
 
   colors.bg_dark = colors.nord1_gui
   colors.bg_dark1 = colors.nord2_gui
-  colors.bg_highlight = colors.nord3_gui
+  colors.bg_highlight = colors.nord1_gui
 
   colors.blue = colors.nord9_gui
   colors.blue0 = colors.nord3_gui_bright
