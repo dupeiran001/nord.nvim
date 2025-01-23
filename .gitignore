@@ -39,3 +39,13 @@ luac.out
 *.x86_64
 *.hex
 
+
+*.log
+/.repro
+/.tests
+/build
+/debug
+/doc/tags
+foo.*
+node_modules
+tt.*
