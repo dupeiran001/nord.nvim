@@ -123,6 +123,7 @@ colorscheme nord
 
 " There are also colorschemes for the different styles.
 colorscheme nord-light
+colorscheme nord-night
 ```
 
 

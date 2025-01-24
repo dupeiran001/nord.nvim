@@ -1,3 +1,3 @@
 require("nord").load({
-  style = 'dark'
+  style = vim.o.background == "light" and "light" or nil,
 })
