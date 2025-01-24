@@ -1,0 +1,306 @@
+*nord.nvim.txt*             For Neovim            Last change: 2025 January 24
+
+==============================================================================
+Table of Contents                                *nord.nvim-table-of-contents*
+
+1. nord.nvim                                             |nord.nvim-nord.nvim|
+  - Features:                                  |nord.nvim-nord.nvim-features:|
+  - Installation                            |nord.nvim-nord.nvim-installation|
+  - Usage                                          |nord.nvim-nord.nvim-usage|
+  - Plugin specific configuration|nord.nvim-nord.nvim-plugin-specific-configuration|
+  - Configuration                          |nord.nvim-nord.nvim-configuration|
+  - Overriding colors and highlight group|nord.nvim-nord.nvim-overriding-colors-and-highlight-group|
+2. Links                                                     |nord.nvim-links|
+
+==============================================================================
+1. nord.nvim                                             *nord.nvim-nord.nvim*
+
+<https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml>
+
+Yet Another Nord Theme for NeoVim
+
+using nord colorplates <https://www.nordtheme.com/docs/colors-and-palettes>
+
+Many amazing features **Thanks to folke/tokyonight.nvim**
+
+
+FEATURES:                                      *nord.nvim-nord.nvim-features:*
+
+- Support terminal colors
+- Support _Neovim 0.9.0_ features
+- Support _A Brunch of Plugins_
+- Support cache to avoid repeat loading
+- Lazy loading plugin specific Highlights on demond
+
+Supported Plugins ~
+
+  -----------------------------------------------------------------------
+  Plugin                              Source
+  ----------------------------------- -----------------------------------
+  aerial.nvim                         aerial
+
+  ale                                 ale
+
+  alpha-nvim                          alpha
+
+  barbar.nvim                         barbar
+
+  blink.cmp                           blink
+
+  bufferline.nvim                     bufferline
+
+  nvim-cmp                            cmp
+
+  codeium.nvim                        codeium
+
+  copilot.lua                         copilot
+
+  nvim-dap                            dap
+
+  dashboard-nvim                      dashboard
+
+  flash.nvim                          flash
+
+  fzf-lua                             fzf
+
+  vim-gitgutter                       gitgutter
+
+  gitsigns.nvim                       gitsigns
+
+  glyph-palette.vim                   glyph-palette
+
+  grug-far.nvim                       grug-far
+
+  headlines.nvim                      headlines
+
+  hop.nvim                            hop
+
+  vim-illuminate                      illuminate
+
+  indent-blankline.nvim               indent-blankline
+
+  indentmini.nvim                     indentmini
+
+  lazy.nvim                           lazy
+
+  leap.nvim                           leap
+
+  lspsaga.nvim                        lspsaga
+
+  mini.animate                        mini_animate
+
+  mini.clue                           mini_clue
+
+  mini.completion                     mini_completion
+
+  mini.cursorword                     mini_cursorword
+
+  mini.deps                           mini_deps
+
+  mini.diff                           mini_diff
+
+  mini.files                          mini_files
+
+  mini.hipatterns                     mini_hipatterns
+
+  mini.icons                          mini_icons
+
+  mini.indentscope                    mini_indentscope
+
+  mini.jump                           mini_jump
+
+  mini.map                            mini_map
+
+  mini.notify                         mini_notify
+
+  mini.operators                      mini_operators
+
+  mini.pick                           mini_pick
+
+  mini.starter                        mini_starter
+
+  mini.statusline                     mini_statusline
+
+  mini.surround                       mini_surround
+
+  mini.tabline                        mini_tabline
+
+  mini.test                           mini_test
+
+  mini.trailspace                     mini_trailspace
+
+  nvim-navic                          navic
+
+  neo-tree.nvim                       neo-tree
+
+  neogit                              neogit
+
+  neotest                             neotest
+
+  noice.dvim                          noice
+
+  nvim-notify                         notify
+
+  nvim-tree.lua                       nvim-tree
+
+  octo.nvim                           octo
+
+  rainbow-delimiters.nvim             rainbow
+
+  render-markdown.nvim                render-markdown
+
+  nvim-scrollbar                      scrollbar
+
+  snacks.nvim                         snacks
+
+  vim-sneak                           sneak
+
+  supermaven-nvim                     supermaven
+
+  telescope.nvim                      telescope
+
+  nvim-treesitter-context             treesitter-context
+
+  trouble.nvim                        trouble
+
+  vimwiki                             vimwiki
+
+  which-key.nvim                      which-key
+
+  yanky.nvim                          yanky
+  -----------------------------------------------------------------------
+
+INSTALLATION                                *nord.nvim-nord.nvim-installation*
+
+with folke/lazy.nvim <https://github.com/folke/lazy.nvim>
+
+>lua
+    {
+      "dupeiran001/nord.nvim",
+      lazy = false,
+      priority = 1000,
+      opts = {},
+    }
+<
+
+
+USAGE                                              *nord.nvim-nord.nvim-usage*
+
+addto your config
+
+>lua
+    vim.cmd[[colorscheme nord]]
+<
+
+or
+
+>vim
+    colorscheme nord
+    
+    " There are also colorschemes for the different styles.
+    colorscheme nord-light
+    colorscheme nord-night
+<
+
+
+PLUGIN SPECIFIC CONFIGURATION*nord.nvim-nord.nvim-plugin-specific-configuration*
+
+
+LUALINE ~
+
+>lua
+    -- Lua
+    require('lualine').setup {
+      options = {
+        -- ... your lualine config
+        theme = 'nord'
+        -- ... your lualine config
+      }
+    }
+<
+
+
+BUFFERLINE ~
+
+>lua
+    local bufferline_nord_hl = require("nord").bufferline
+    require('bufferline').setup{
+        -- ... your bufferline config
+        highlights = bufferline_nord_hl
+        -- ... your bufferline config
+    }
+<
+
+
+CONFIGURATION                              *nord.nvim-nord.nvim-configuration*
+
+**Make Sure setup is called before setting colorscheme nord, or default
+configuration will be applied**
+
+Default config ~
+
+>lua
+    ---@class nord.Config
+    M.defaults = {
+      style = "dark", -- The style can ether be 'light' or 'dark'
+      transparent = false, -- Whether we should set the background color
+      terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+      dim_inactive = false, -- Dims inactive windows
+      lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
+    
+      light_brightness = 0.3, -- Adjusts the brightness of the colors of the **light** style. Number between 0 and 1, from dull to vibrant colors
+    
+      styles = {
+        -- Style to be applied to different syntax groups
+        -- Value is any valid attr-list value for `:help nvim_set_hl`
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = { italic = true },
+        variables = { bold = true },
+        -- Background styles. Can be "dark", "transparent" or "normal"
+        sidebars = "dark", -- style for sidebars, see below
+        floats = "dark", -- style for floating windows
+      },
+    
+      --- You can override specific highlights to use other groups or a hex color
+      --- function will be called with a Highlights and ColorScheme table
+      ---@param highlights nord.Highlights
+      ---@param colors ColorScheme
+      on_highlights = function(highlights, colors) end,
+    
+      --- You can override specific color groups to use other groups or a hex color
+      --- function will be called with a ColorScheme table
+      ---@param colors ColorScheme
+      on_colors = function(colors) end,
+    
+      cache = true, -- When set to true, the theme will be cached for better performance
+    
+      ---@type table<string, boolean|{enabled:boolean}>
+      plugins = {
+        -- enable all plugins when not using lazy.nvim
+        -- set to false to manually enable/disable plugins
+        all = package.loaded.lazy == nil,
+        -- uses your plugin manager to automatically enable needed plugins
+        -- currently only lazy.nvim is supported
+        auto = false,
+        -- add any plugins here that you want to enable
+        -- telescope = true,
+      },
+    }
+<
+
+
+OVERRIDING COLORS AND HIGHLIGHT GROUP*nord.nvim-nord.nvim-overriding-colors-and-highlight-group*
+
+refer to tokyonight.nvim#overriding
+<https://github.com/folke/tokyonight.nvim#-overriding-colors--highlight-groups>
+
+==============================================================================
+2. Links                                                     *nord.nvim-links*
+
+1. *CI*: https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml/badge.svg
+2. *nord-dark*: ./resources/nord-dark.png
+
+Generated by panvimdoc <https://github.com/kdheepak/panvimdoc>
+
+vim:tw=78:ts=8:noet:ft=help:norl:
