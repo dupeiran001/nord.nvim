@@ -31,7 +31,8 @@ runs:
       run: |
         sudo apt-get update
         sudo apt-get install -y lua5.1 luarocks
-        luarocks install luassert
+        luarocks install --local luassert
+        echo 'export PATH=$HOME/.luarocks/bin:$PATH' >> $GITHUB_ENV
     - name: Neovim Cache Save
       id: cache-neovim-save
       if: steps.cache-neovim-restore.outputs.cache-hit != 'true'
