@@ -5,7 +5,6 @@ on:
   pull_request:
 
 env:
-  REPO: "dupeiran001/nord.nvim"
   PLUGIN: "nord.nvim"
 
 jobs:
@@ -62,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     needs: [config, tests]
-    if: ${{ github.repository == env.REPO && github.ref == 'refs/heads/main' && !failure() }}
+    if: ${{ github.ref == 'refs/heads/main' && !failure() }}
     steps:
       - uses: actions/checkout@v4
       - run: git pull
