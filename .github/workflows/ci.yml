@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     needs: [config, tests]
-    if: ${{ !failure() && ${{ REPO }} == github.repository && github.ref == 'refs/heads/main' }}
+    if: ${{ github.repository == env.REPO && github.ref == 'refs/heads/main' && !failure() }}
     steps:
       - uses: actions/checkout@v4
       - run: git pull
