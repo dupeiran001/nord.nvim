@@ -152,7 +152,7 @@ function M.cache.read(key)
       luanil = {
         object = true,
         array = true,
-      }
+      },
     })
   end)
   return ok and ret or nil

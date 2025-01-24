@@ -4,14 +4,13 @@ M.version = "0.1.0"
 
 ---@class nord.Config
 M.defaults = {
-  style = 'dark',         -- The style can ether be 'light' or 'dark'
-  transparent = false,    -- Whether we should set the background color
+  style = "dark", -- The style can ether be 'light' or 'dark'
+  transparent = false, -- Whether we should set the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-  dim_inactive = false,   -- Dims inactive windows
-  lualine_bold = true,    -- When `true`, section headers in the lualine theme will be bold
+  dim_inactive = false, -- Dims inactive windows
+  lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 
   light_brightness = 0.3, -- Adjusts the brightness of the colors of the **light** style. Number between 0 and 1, from dull to vibrant colors
-
 
   styles = {
     -- Style to be applied to different syntax groups
@@ -22,7 +21,7 @@ M.defaults = {
     variables = { bold = true },
     -- Background styles. Can be "dark", "transparent" or "normal"
     sidebars = "dark", -- style for sidebars, see below
-    floats = "dark",   -- style for floating windows
+    floats = "dark", -- style for floating windows
   },
 
   --- You can override specific highlights to use other groups or a hex color
@@ -53,7 +52,6 @@ M.defaults = {
 
 -- @type nord.Config
 M.options = nil
-
 
 ---@param options? nord.Config
 function M.setup(options)

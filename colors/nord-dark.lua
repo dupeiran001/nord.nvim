@@ -1,3 +1,3 @@
 require("nord").load({
-  style = "dark"
+  style = "dark",
 })

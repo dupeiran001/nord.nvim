@@ -1,5 +1,5 @@
-local config = require("nord.config")
 local bufferline = require("nord.bufferline")
+local config = require("nord.config")
 
 local M = {}
 ---@type {light?: string, dark?: string}

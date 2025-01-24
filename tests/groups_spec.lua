@@ -69,7 +69,7 @@ describe("group config", function()
         all = false,
         auto = false,
         dashboard = true,
-      }
+      },
     })
     local all = {} ---@type table<string, boolean>
     for _, name in ipairs(base) do
