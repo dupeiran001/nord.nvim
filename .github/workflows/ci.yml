@@ -47,7 +47,7 @@ jobs:
     if: ${{ needs.config.outputs.has_tests == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/neovim@main
+      - uses: .github/neovim@main
       - name: Test Cache
         uses: actions/cache@v4
         with:
