@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     needs: [config, tests]
-    if: ${{ github.repository == env.REPO && github.ref == 'refs/heads/main' && !failure() }}
+    if: ${{ github.repository == $REPO && github.ref == 'refs/heads/main' && !failure() }}
     steps:
       - uses: actions/checkout@v4
       - run: git pull
@@ -76,7 +76,7 @@ jobs:
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
-          vimdoc: ${{ PLUGIN }}
+          vimdoc: ${{ $PLUGIN }}
           version: "Neovim"
           demojify: true
           treesitter: true
