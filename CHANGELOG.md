@@ -5,6 +5,7 @@
 ### Features 
 
 * feat(bufferline): provide bufferline themes
+* fix(Lazy.nvim): change LazyDimmed to increase visibility
 
 ## [0.1.0](https://github.com/dupeiran001/nord.nvim/tree/ebdb0bcc301c7ba08c16ece6b95651d09e57247e) (2025-1-22)
 
