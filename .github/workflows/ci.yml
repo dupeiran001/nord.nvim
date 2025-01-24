@@ -47,7 +47,7 @@ jobs:
     if: ${{ needs.config.outputs.has_tests == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/neovim@main
+      - uses: ./.github/neovim
       - name: Test Cache
         uses: actions/cache@v4
         with:
@@ -65,7 +65,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: git pull
-      - uses: ./.github/neovim@main
+      - uses: ./.github/neovim
       - name: Generate docs
         if: ${{ needs.config.outputs.has_docs == 'true' }}
         shell: bash
