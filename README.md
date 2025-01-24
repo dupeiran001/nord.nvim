@@ -1,4 +1,7 @@
 # nord.nvim
+
+[![CI](https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml/badge.svg)](https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml)
+
 Yet Another Nord Theme for NeoVim
 
 using [nord colorplates](https://www.nordtheme.com/docs/colors-and-palettes)
