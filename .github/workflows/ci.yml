@@ -65,7 +65,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: git pull
-      - uses: ./.github/neovim@main
+      - uses: .github/neovim@main
       - name: Generate docs
         if: ${{ needs.config.outputs.has_docs == 'true' }}
         shell: bash
