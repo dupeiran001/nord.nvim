@@ -132,7 +132,10 @@ colorscheme nord-night
 
 ## Plugin specific configuration
 
-### [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+<details>
+<summary> LuaLine </summary>
+
+* [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 
 ```lua
 -- Lua
@@ -145,7 +148,12 @@ require('lualine').setup {
 }
 ```
 
-### [Bufferline](https://github.com/akinsho/bufferline.nvim)
+</details>
+
+<details>
+<summary> Bufferline </summary>
+
+* [Bufferline](https://github.com/akinsho/bufferline.nvim)
 
 ```lua
 local bufferline_nord_hl = require("nord").bufferline
@@ -156,6 +164,30 @@ require('bufferline').setup{
 }
 ```
 
+</details>
+
+<details>
+<summary> rainbow_delimiters</summary>
+
+* [rainbow_delimiters](https://github.com/HiPhish/rainbow-delimiters.nvim)
+
+**Its recommended to replace red delimiters with fg:**
+
+```lua
+require("rainbow-delimiters.setup").setup({
+    highlight = {
+		"Normal",
+		"RainbowDelimiterOrange",
+		"RainbowDelimiterYellow",
+		"RainbowDelimiterGreen",
+		"RainbowDelimiterCyan",
+		"RainbowDelimiterBlue",
+		"RainbowDelimiterViolet",
+	},
+})
+
+```
+</details>
 ## Configuration
 
 **Make Sure `setup` is called before setting `colorscheme nord`, or default configuration will be applied**
