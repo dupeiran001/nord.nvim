@@ -68,7 +68,7 @@ function M.get(c, opts)
     ["@markup.strong"]                = { bold = true },
     ["@markup.underline"]             = { underline = true },
     ["@module"]                       = "Include",
-    ["@module.builtin"]               = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@module.builtin"]               = { fg = c.orange }, -- Variable names that are defined by the languages, like `this` or `self`.
     ["@namespace.builtin"]            = "@variable.builtin",
     ["@none"]                         = {},
     ["@number"]                       = "Number",
