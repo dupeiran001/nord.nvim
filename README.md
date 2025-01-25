@@ -188,6 +188,7 @@ require("rainbow-delimiters.setup").setup({
 
 ```
 </details>
+
 ## Configuration
 
 **Make Sure `setup` is called before setting `colorscheme nord`, or default configuration will be applied**
