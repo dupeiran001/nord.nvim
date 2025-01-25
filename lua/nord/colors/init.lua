@@ -56,7 +56,7 @@ function M.setup(opts)
   colors.red = colors.nord11_gui
   colors.red1 = colors.nord11_gui
   colors.teal = colors.nord7_gui
-  colors.terminal_black = colors.nord0_gui
+  colors.terminal_black = colors.nord3_gui
   colors.yellow = colors.nord13_gui
   colors.git = {
     add = colors.nord14_gui,
