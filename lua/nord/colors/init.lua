@@ -59,7 +59,7 @@ function M.setup(opts)
   colors.terminal_black = colors.nord0_gui
   colors.yellow = colors.nord13_gui
   colors.git = {
-    add = colors.nord12_gui,
+    add = colors.nord14_gui,
     change = colors.nord9_gui,
     delete = colors.nord11_gui,
   }

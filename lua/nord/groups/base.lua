@@ -118,10 +118,10 @@ function M.get(c, opts)
     DiagnosticInfo              = { fg = c.info },                                        -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticHint              = { fg = c.hint },                                        -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticUnnecessary       = { fg = c.comment },                                     -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticVirtualTextError  = { bg = Util.blend_bg(c.error, 0.1), fg = c.error },     -- Used for "Error" diagnostic virtual text
-    DiagnosticVirtualTextWarn   = { bg = Util.blend_bg(c.warning, 0.1), fg = c.warning }, -- Used for "Warning" diagnostic virtual text
-    DiagnosticVirtualTextInfo   = { bg = Util.blend_bg(c.info, 0.1), fg = c.info },       -- Used for "Information" diagnostic virtual text
-    DiagnosticVirtualTextHint   = { bg = Util.blend_bg(c.hint, 0.1), fg = c.hint },       -- Used for "Hint" diagnostic virtual text
+    DiagnosticVirtualTextError  = { bg = Util.blend(c.error, 0.3, "#3F3F3F"), fg = c.error },     -- Used for "Error" diagnostic virtual text
+    DiagnosticVirtualTextWarn   = { bg = Util.blend(c.warning, 0.3, "#3F3F3F"), fg = c.warning }, -- Used for "Warning" diagnostic virtual text
+    DiagnosticVirtualTextInfo   = { bg = Util.blend(c.info, 0.3, "#3F3F3F"), fg = c.info },       -- Used for "Information" diagnostic virtual text
+    DiagnosticVirtualTextHint   = { bg = Util.blend(c.hint, 0.3,  "#3F3F3F"), fg = c.hint },       -- Used for "Hint" diagnostic virtual text
     DiagnosticUnderlineError    = { undercurl = true, sp = c.error },                     -- Used to underline "Error" diagnostics
     DiagnosticUnderlineWarn     = { undercurl = true, sp = c.warning },                   -- Used to underline "Warning" diagnostics
     DiagnosticUnderlineInfo     = { undercurl = true, sp = c.info },                      -- Used to underline "Information" diagnostics
