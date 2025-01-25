@@ -205,8 +205,9 @@ or
 
 PLUGIN SPECIFIC CONFIGURATION*nord.nvim-nord.nvim-plugin-specific-configuration*
 
+LuaLine ~
 
-LUALINE ~
+- Lualine <https://github.com/nvim-lualine/lualine.nvim>
 
 >lua
     -- Lua
@@ -219,8 +220,9 @@ LUALINE ~
     }
 <
 
+Bufferline ~
 
-BUFFERLINE ~
+- Bufferline <https://github.com/akinsho/bufferline.nvim>
 
 >lua
     local bufferline_nord_hl = require("nord").bufferline
@@ -229,6 +231,26 @@ BUFFERLINE ~
         highlights = bufferline_nord_hl
         -- ... your bufferline config
     }
+<
+
+rainbow_delimiters ~
+
+- rainbow_delimiters <https://github.com/HiPhish/rainbow-delimiters.nvim>
+
+**Its recommended to replace red delimiters with fg:**
+
+>lua
+    require("rainbow-delimiters.setup").setup({
+        highlight = {
+            "Normal",
+            "RainbowDelimiterOrange",
+            "RainbowDelimiterYellow",
+            "RainbowDelimiterGreen",
+            "RainbowDelimiterCyan",
+            "RainbowDelimiterBlue",
+            "RainbowDelimiterViolet",
+        },
+    })
 <
 
 
