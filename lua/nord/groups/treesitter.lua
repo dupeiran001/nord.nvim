@@ -94,7 +94,7 @@ function M.get(c, opts)
     ["@type.definition"]              = "Typedef",
     ["@type.qualifier"]               = "@keyword",
     ["@variable"]                     = { fg = c.fg, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
-    ["@variable.builtin"]             = { fg = c.red },                               -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@variable.builtin"]             = { fg = c.orange },                               -- Variable names that are defined by the languages, like `this` or `self`.
     ["@variable.member"]              = { fg = c.green1 },                            -- For fields.
     ["@variable.parameter"]           = { fg = c.yellow },                            -- For parameters of a function.
     ["@variable.parameter.builtin"]   = { fg = Util.blend_fg(c.yellow, 0.8) },        -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
