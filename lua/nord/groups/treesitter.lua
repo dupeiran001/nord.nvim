@@ -74,7 +74,7 @@ function M.get(c, opts)
     ["@number"]                       = "Number",
     ["@number.float"]                 = "Float",
     ["@operator"]                     = { fg = c.blue5 },   -- For any operator: `+`, but also `->` and `*` in C.
-    ["@property"]                     = { fg = c.blue1 },
+    ["@property"]                     = { fg = c.fg },
     ["@punctuation.bracket"]          = { fg = c.fg_dark }, -- For brackets and parens.
     ["@punctuation.delimiter"]        = { fg = c.blue5 },   -- For delimiters ie: `.`
     ["@punctuation.special"]          = { fg = c.blue5 },   -- For special symbols (e.g. `{}` in string interpolation)
@@ -96,7 +96,7 @@ function M.get(c, opts)
     ["@variable"]                     = { fg = c.fg, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
     ["@variable.builtin"]             = { fg = c.orange },                               -- Variable names that are defined by the languages, like `this` or `self`.
     ["@variable.member"]              = { fg = c.green1 },                            -- For fields.
-    ["@variable.parameter"]           = { fg = c.yellow },                            -- For parameters of a function.
+    ["@variable.parameter"]           = { fg = c.nord6_gui },                            -- For parameters of a function.
     ["@variable.parameter.builtin"]   = { fg = Util.blend_fg(c.yellow, 0.8) },        -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
   }
 

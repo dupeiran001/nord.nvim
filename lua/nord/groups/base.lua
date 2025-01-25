@@ -86,7 +86,7 @@ function M.get(c, opts)
     Italic                      = { italic = true, fg = c.fg },                           -- (preferred) any italic text
     Keyword                     = { fg = c.cyan, style = opts.styles.keywords },          --  any other keyword
     Operator                    = { fg = c.blue5 },                                       -- "sizeof", "+", "*", etc.
-    PreProc                     = { fg = c.cyan },                                        -- (preferred) generic Preprocessor
+    PreProc                     = { fg = c.blue2 },                                        -- (preferred) generic Preprocessor
     Special                     = { fg = c.blue1 },                                       -- (preferred) any special symbol
     Statement                   = { fg = c.magenta },                                     -- (preferred) any statement
     String                      = { fg = c.green },                                       --   a string constant: "this is a string"
