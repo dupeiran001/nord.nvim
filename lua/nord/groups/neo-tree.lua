@@ -10,7 +10,7 @@ function M.get(c, opts)
   return {
     NeoTreeDimText              = { fg = c.fg_gutter },
     NeoTreeFileName             = { fg = c.fg_sidebar },
-    NeoTreeGitModified          = { fg = c.orange },
+    NeoTreeGitModified          = { fg = c.yellow },
     NeoTreeGitStaged            = { fg = c.green1 },
     NeoTreeGitUntracked         = { fg = c.magenta },
     NeoTreeNormal               = { fg = c.fg_sidebar, bg = c.bg_sidebar },

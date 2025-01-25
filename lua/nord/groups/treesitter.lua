@@ -33,14 +33,14 @@ function M.get(c, opts)
     ["@function.macro"]               = "Macro",
     ["@function.method"]              = "Function",
     ["@function.method.call"]         = "@function.method",
-    ["@keyword"]                      = { fg = c.purple, style = opts.styles.keywords }, -- For keywords that don't fall in previous categories.
+    ["@keyword"]                      = { fg = c.blue2, style = opts.styles.keywords }, -- For keywords that don't fall in previous categories.
     ["@keyword.conditional"]          = "Conditional",
     ["@keyword.coroutine"]            = "@keyword",
     ["@keyword.debug"]                = "Debug",
     ["@keyword.directive"]            = "PreProc",
     ["@keyword.directive.define"]     = "Define",
     ["@keyword.exception"]            = "Exception",
-    ["@keyword.function"]             = { fg = c.magenta, style = opts.styles.functions }, -- For keywords used to define a function.
+    ["@keyword.function"]             = { fg = c.blue5, style = opts.styles.functions }, -- For keywords used to define a function.
     ["@keyword.import"]               = "Include",
     ["@keyword.operator"]             = "@operator",
     ["@keyword.repeat"]               = "Repeat",
