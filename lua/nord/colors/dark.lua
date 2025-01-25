@@ -7,6 +7,7 @@ local ret = {
   nord2_gui = plate.gray, -- nord2 in palette
   nord3_gui = plate.light_gray, -- nord3 in palette
   nord3_gui_bright = plate.light_gray_bright, -- out of palette
+  nord3_gui_brightest = plate.light_gray_suprtbright, -- out of palette
   nord4_gui = plate.darkest_white, -- nord4 in palette
   nord5_gui = plate.darker_white, -- nord5 in palette
   nord6_gui = plate.white, -- nord6 in palette

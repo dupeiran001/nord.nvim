@@ -8,7 +8,7 @@ function M.get(c, opts)
   return {
     LazyProgressDone = { bold = true, fg = c.magenta2 },
     LazyProgressTodo = { bold = true, fg = c.fg_gutter },
-    LazyDimmed = {fg = c.blue5, italic = true}
+    LazyDimmed = {fg = c.comment, italic = true}
   }
 end
 

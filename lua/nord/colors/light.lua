@@ -2,9 +2,9 @@ local Util = require("nord.util")
 local plate = require("nord.colors.plate")
 
 local light = {
-  nord0_gui = plate.white, -- nord0 in palette
-  nord1_gui = plate.darker_white, -- nord1 in palette
-  nord2_gui = plate.darkest_white, -- nord2 in palette
+  nord4_gui = plate.gray, -- nord4 in palette
+  nord5_gui = plate.dark_gray, -- nord5 in palette
+  nord6_gui = plate.black, -- nord6 in palette
 
   -- Same colors across light and dark from here down...
   nord7_gui = plate.teal, -- nord7 in palette
@@ -22,11 +22,12 @@ local light_dimmed = Util.dimm(light)
 
 ---@class Palette
 local ret = {
+  nord0_gui = plate.white, -- nord0 in palette
+  nord1_gui = plate.darker_white, -- nord1 in palette
+  nord2_gui = plate.darkest_white, -- nord2 in palette
   nord3_gui = plate.light_gray, -- nord3 in palette
   nord3_gui_bright = plate.light_gray_bright, -- out of palette
-  nord4_gui = plate.gray, -- nord4 in palette
-  nord5_gui = plate.dark_gray, -- nord5 in palette
-  nord6_gui = plate.black, -- nord6 in palette
+
   none = "NONE",
 }
 

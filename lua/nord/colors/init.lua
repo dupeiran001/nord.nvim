@@ -39,7 +39,7 @@ function M.setup(opts)
   colors.blue5 = colors.nord8_gui
   colors.blue6 = colors.nord7_gui
   colors.blue7 = colors.nord3_gui
-  colors.comment = colors.nord3_gui
+  colors.comment = colors.nord3_gui_brightest
   colors.cyan = colors.nord8_gui
   colors.dark3 = colors.nord3_gui
   colors.dark5 = colors.nord3_gui
@@ -93,7 +93,7 @@ function M.setup(opts)
     or colors.bg
 
   colors.bg_visual = Util.blend_bg(colors.blue0, 0.4)
-  colors.bg_search = colors.blue0
+  colors.bg_search = colors.bg_dark1
   colors.fg_sidebar = colors.fg_dark
   colors.fg_float = colors.fg
 
