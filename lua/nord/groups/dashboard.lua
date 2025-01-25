@@ -10,18 +10,18 @@ function M.get(c, opts)
     DashboardHeader           = { fg = c.blue },
     DashboardFooter           = { fg = c.blue1 },
     -- Hyper theme
-    DashboardProjectTitle     = { fg = c.cyan },
-    DashboardProjectTitleIcon = { fg = c.orange },
+    DashboardProjectTitle     = { fg = c.fg },
+    DashboardProjectTitleIcon = { fg = c.green },
     DashboardProjectIcon      = { fg = c.yellow },
-    DashboardMruTitle         = { fg = c.cyan },
+    DashboardMruTitle         = { fg = c.fg },
     DashboardMruIcon          = { fg = c.purple },
-    DashboardFiles            = { fg = c.blue },
-    DashboardShortCutIcon     = { fg = c.magenta },
+    DashboardFiles            = { fg = c.fg },
+    DashboardShortCutIcon     = { fg = c.blue6 },
     -- Doome theme
-    DashboardDesc             = { fg = c.cyan },
-    DashboardKey              = { fg = c.orange },
-    DashboardIcon             = { fg = c.cyan },
-    DashboardShortCut         = { fg = c.cyan },
+    DashboardDesc             = { fg = c.fg },
+    DashboardKey              = { fg = c.blue6 },
+    DashboardIcon             = { fg = c.blue2 },
+    DashboardShortCut         = { fg = c.blue6 },
   }
 end
 
