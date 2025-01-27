@@ -93,6 +93,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: release-please config
+        id: release-please-config
         run: |
           if [ -f .github/release-please-config.json ]; then
             echo "config-file=.github/release-please-config.json" >> $GITHUB_OUTPUT
@@ -119,4 +120,4 @@ jobs:
           git tag -d stable || true
           git push origin :stable || true
           git tag -a stable -m "Last Stable Release"
-          git push origin stable
+        git push origin stable
