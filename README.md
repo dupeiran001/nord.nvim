@@ -8,6 +8,10 @@ using [nord colorplates](https://www.nordtheme.com/docs/colors-and-palettes)
 
 Many amazing features **Thanks to [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)**
 
+> [!NOTE]  
+>
+> the colors may change in future version, makes it looks more likiely to the [VSCode nord](https://www.nordtheme.com/ports/visual-studio-code) and [nord.vim](https://www.nordtheme.com/ports/vim) official repo
+
 ![nord-dark](./resources/nord-dark.png)
 
 ## Features:
@@ -255,4 +259,99 @@ M.defaults = {
 
 ## Overriding colors and highlight group 
 
-refer to [tokyonight.nvim#overriding](https://github.com/folke/tokyonight.nvim#-overriding-colors--highlight-groups)
+How the highlight groups are calculated:
+
+1. `colors` are determined based on your configuration, with the ability to
+   override them using `config.on_colors(colors)`.
+1. These `colors` are utilized to generate the highlight groups.
+1. `config.on_highlights(highlights, colors)` can be used to override highlight
+   groups.
+
+For default values of `colors` and `highlights`, please consult the
+
+[dark](lua/nord/colors/dark.lua),
+[light](lua/nord/colors/light.lua),
+
+<details>
+  <summary>Settings & Changing Colors</summary>
+
+```lua
+require("nord").setup({
+  -- use the night style
+  style = "dark",
+  -- disable italic for functions
+  styles = {
+    functions = {}
+  },
+  -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+  on_colors = function(colors)
+    colors.hint = colors.orange
+    colors.error = "#ff0000"
+  end
+})
+```
+
+</details>
+
+<details>
+  <summary>Borderless Telescope</summary>
+
+```lua
+require("nord").setup({
+  on_highlights = function(hl, c)
+    local prompt = "#2d3149"
+    hl.TelescopeNormal = {
+      bg = c.bg_dark,
+      fg = c.fg_dark,
+    }
+    hl.TelescopeBorder = {
+      bg = c.bg_dark,
+      fg = c.bg_dark,
+    }
+    hl.TelescopePromptNormal = {
+      bg = prompt,
+    }
+    hl.TelescopePromptBorder = {
+      bg = prompt,
+      fg = prompt,
+    }
+    hl.TelescopePromptTitle = {
+      bg = prompt,
+      fg = prompt,
+    }
+    hl.TelescopePreviewTitle = {
+      bg = c.bg_dark,
+      fg = c.bg_dark,
+    }
+    hl.TelescopeResultsTitle = {
+      bg = c.bg_dark,
+      fg = c.bg_dark,
+    }
+  end,
+})
+```
+
+</details>
+
+<details>
+  <summary>Fix <code>undercurls</code> in Tmux</summary>
+
+To have undercurls show up and in color, add the following to your
+[Tmux](https://github.com/tmux/tmux) configuration file:
+
+```sh
+# Undercurl
+set -g default-terminal "${TERM}"
+set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'  # undercurl support
+set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'  # underscore colours - needs tmux-3.0
+```
+
+</details>
+
+
+## Road Map
+
+- [ ] support bufferline without extra configuration
+- [ ] port vim.nord and vscode.nord highlights
+- [ ] fix nord-light theme 
+- [ ] add more style support (nord-forest, nord-warmer)
