@@ -4,7 +4,7 @@
 
 Yet Another Nord Theme for NeoVim
 
-using [nord colorplates](https://www.nordtheme.com/docs/colors-and-palettes)
+using [nord colorpalettes](https://www.nordtheme.com/docs/colors-and-palettes)
 
 Many amazing features **Thanks to [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)**
 
