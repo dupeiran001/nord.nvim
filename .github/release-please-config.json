@@ -5,5 +5,6 @@
       "release-type": "simple",
       "extra-files": ["lua/nord/config.lua"]
     }
-  }
+  },
+  "release-as": "0.2.0"
 }
