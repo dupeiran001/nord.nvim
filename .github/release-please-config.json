@@ -6,6 +6,6 @@
       "extra-files": ["lua/nord/config.lua"]
     }
   },
-  "release-as": "0.2.0",
+  "release-as": "0.2.1",
   "bootstrap-sha": "1070965f1cfa200fec5e94bb4ceffaa3b5c8ced4"
 }
