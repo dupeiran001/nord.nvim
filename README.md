@@ -159,6 +159,8 @@ require('lualine').setup {
 
 * [Bufferline](https://github.com/akinsho/bufferline.nvim)
 
+If you find the background of the filetype icons is not correct, this should works for you:
+
 ```lua
 local bufferline_nord_hl = require("nord").bufferline
 require('bufferline').setup{
@@ -166,6 +168,22 @@ require('bufferline').setup{
     highlights = bufferline_nord_hl
     -- ... your bufferline config
 }
+```
+
+</details>
+
+<details>
+<summary> fzf_lua </summary>
+
+* [fzf_lua](https://github.com/ibhagwan/fzf-lua)
+
+For **fzf-lua** to use the highlight groups defined by this colorscheme,
+you'll have to set `fzf_colors` to true:
+
+```lua
+require("fzf-lua").setup({
+    fzf_colors = true
+})
 ```
 
 </details>
