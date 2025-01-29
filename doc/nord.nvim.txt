@@ -1,4 +1,4 @@
-*nord.nvim.txt*             For Neovim            Last change: 2025 January 28
+*nord.nvim.txt*             For Neovim            Last change: 2025 January 29
 
 ==============================================================================
 Table of Contents                                *nord.nvim-table-of-contents*
@@ -403,6 +403,8 @@ To have undercurls show up and in color, add the following to your Tmux
 ROAD MAP                                        *nord.nvim-nord.nvim-road-map*
 
 - support bufferline without extra configuration
+- derive nvim-webdevicon highlights based on colorscheme
+- fix fzf-lua highlights
 - port vim.nord and vscode.nord highlights
 - fix nord-light theme
 - add more style support (nord-forest, nord-warmer)
