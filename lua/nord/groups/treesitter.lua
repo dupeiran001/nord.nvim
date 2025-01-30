@@ -48,7 +48,7 @@ function M.get(c, opts)
     ["@keyword.storage"]              = "StorageClass",
     ["@label"]                        = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
     ["@markup"]                       = "@none",
-    ["@markup.emphasis"]              = { italic = true },
+    ["@markup.emphasis"]              = { fg = c.purple, italic = true },
     ["@markup.environment"]           = "Macro",
     ["@markup.environment.name"]      = "Type",
     ["@markup.heading"]               = "Title",
@@ -64,9 +64,9 @@ function M.get(c, opts)
     ["@markup.math"]                  = "Special",
     ["@markup.raw"]                   = "String",
     ["@markup.raw.markdown_inline"]   = { bg = c.terminal_black, fg = c.blue },
-    ["@markup.strikethrough"]         = { strikethrough = true },
-    ["@markup.strong"]                = { bold = true },
-    ["@markup.underline"]             = { underline = true },
+    ["@markup.strikethrough"]         = { fg = c.orange, strikethrough = true },
+    ["@markup.strong"]                = { fg = c.yellow , bold = true },
+    ["@markup.underline"]             = { fg = c.yellow, underline = true },
     ["@module"]                       = "Include",
     ["@module.builtin"]               = { fg = c.orange }, -- Variable names that are defined by the languages, like `this` or `self`.
     ["@namespace.builtin"]            = "@variable.builtin",
