@@ -141,6 +141,8 @@ Supported Plugins ~
 
   neogit                              neogit
 
+  neorg                               neorg
+
   neotest                             neotest
 
   noice.dvim                          noice

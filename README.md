@@ -80,6 +80,7 @@ Many amazing features **Thanks to [folke/tokyonight.nvim](https://github.com/fol
 | [nvim-navic](https://github.com/SmiteshP/nvim-navic) | [`navic`](lua/nord/groups/navic.lua) |
 | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) | [`neo-tree`](lua/nord/groups/neo-tree.lua) |
 | [neogit](https://github.com/TimUntersberger/neogit) | [`neogit`](lua/nord/groups/neogit.lua) |
+| [neorg](https://github.com/nvim-neorg/neorg) | [`neorg`](lua/nord/groups/neorg.lua) |
 | [neotest](https://github.com/nvim-neotest/neotest) | [`neotest`](lua/nord/groups/neotest.lua) |
 | [noice.dvim](https://github.com/folke/noice.dvim) | [`noice`](lua/nord/groups/noice.lua) |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify) | [`notify`](lua/nord/groups/notify.lua) |
