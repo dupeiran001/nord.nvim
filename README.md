@@ -370,9 +370,10 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
 
 ## Road Map
 
-- [ ] support bufferline without extra configuration
-- [ ] derive nvim-webdevicon highlights based on colorscheme
-- [ ] fix fzf-lua highlights
+- [ ] refactor plugins that need extra configuration into plugin
+    - [ ] support bufferline with extra configuration
+    - [ ] derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - [ ] port vim.nord and vscode.nord highlights
 - [ ] fix nord-light theme 
 - [ ] add more style support (nord-forest, nord-warmer)
+- [x] fix fzf-lua highlights
