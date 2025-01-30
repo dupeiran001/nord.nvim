@@ -11,7 +11,7 @@ function M.get(c, opts)
     WhichKeyDesc      = { fg = c.magenta },
     WhichKeySeparator = { fg = c.comment },
     WhichKeyNormal    = { bg = c.bg_float },
-    WhichKeyValue     = { fg = c.dark5 },
+    WhichKeyValue     = { fg = c.comment },
     WhichKeyBorder    = { fg = c.fg, bg = c.bg_float },
   }
 end
