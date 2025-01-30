@@ -420,12 +420,13 @@ To have undercurls show up and in color, add the following to your Tmux
 
 ROAD MAP                                        *nord.nvim-nord.nvim-road-map*
 
-- support bufferline without extra configuration
-- derive nvim-webdevicon highlights based on colorscheme
-- fix fzf-lua highlights
+- refactor plugins that need extra configuration into plugin
+    - support bufferline with extra configuration
+    - derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - port vim.nord and vscode.nord highlights
 - fix nord-light theme
 - add more style support (nord-forest, nord-warmer)
+- fix fzf-lua highlights
 
 ==============================================================================
 2. Links                                                     *nord.nvim-links*
