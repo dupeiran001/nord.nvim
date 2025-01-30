@@ -7,14 +7,15 @@ M.url = "https://github.com/lukas-reineke/headlines.nvim"
 ---@type nord.HighlightsFn
 function M.get(c, opts)
   -- stylua: ignore
-  local ret = {
+  return {
     CodeBlock = { bg = c.bg_dark },
-    Headline  = "Headline1",
+    Headline1 = { link = "markdownH1" },
+    Headline2 = { link = "markdownH2" },
+    Headline3 = { link = "markdownH3" },
+    Headline4 = { link = "markdownH4" },
+    Headline5 = { link = "markdownH5" },
+    Headline6 = { link = "markdownH6" },
   }
-  for i, color in ipairs(c.rainbow) do
-    ret["Headline" .. i] = { bg = Util.blend_bg(color, 0.05) }
-  end
-  return ret
 end
 
 return M
