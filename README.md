@@ -212,6 +212,30 @@ require("rainbow-delimiters.setup").setup({
 ```
 </details>
 
+<details>
+<summary> toggleterm </summary>
+
+* [toggleterm](https://github.com/akinsho/toggleterm.nvim)
+
+```lua
+require("toggleterm.nvim").setup({
+	highlights = {
+		-- highlights which map to a highlight group name and a table of it's values
+		Normal = {
+			link = "Normal",
+		},
+		NormalFloat = {
+			link = "NormalFloat",
+		},
+		FloatBorder = {
+			link = "FloatBorder",
+		},
+	},
+})
+```
+
+</details>
+
 ## Configuration
 
 **Make Sure `setup` is called before setting `colorscheme nord`, or default configuration will be applied**
@@ -377,3 +401,10 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
 - [ ] fix nord-light theme 
 - [ ] add more style support (nord-forest, nord-warmer)
 - [x] fix fzf-lua highlights
+
+## FAQ
+
+### Modification to theme does not take effect
+
+- clear cache `~/.cache/nvim/nord-*.json`, and disable `cache` option in nord configuration
+- disable `plugins.auto` and enable `plugins.all`, check whether the plugin is loaded (only available in lazy.nvim)
