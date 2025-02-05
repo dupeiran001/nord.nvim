@@ -156,24 +156,6 @@ require('lualine').setup {
 </details>
 
 <details>
-<summary> Bufferline </summary>
-
-* [Bufferline](https://github.com/akinsho/bufferline.nvim)
-
-If you find the background of the filetype icons is not correct, this should works for you:
-
-```lua
-local bufferline_nord_hl = require("nord").bufferline
-require('bufferline').setup{
-    -- ... your bufferline config
-    highlights = bufferline_nord_hl
-    -- ... your bufferline config
-}
-```
-
-</details>
-
-<details>
 <summary> fzf_lua </summary>
 
 * [fzf_lua](https://github.com/ibhagwan/fzf-lua)
@@ -395,7 +377,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
 ## Road Map
 
 - [ ] refactor plugins that need extra configuration into plugin
-    - [ ] support bufferline with extra configuration
+    - [x] support bufferline with extra configuration (**Thanks to the autocmd solution by [loctvl842/monokai-pro.nvim](https://github.com/loctvl842/monokai-pro.nvim/blob/6c15e36834a624a32f46c6db8f9fc063995b24b6/lua/monokai-pro/autocmds.lua#L7-L28)**)
     - [ ] derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - [ ] port vim.nord and vscode.nord highlights
 - [ ] fix nord-light theme 

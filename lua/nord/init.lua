@@ -1,4 +1,3 @@
-local bufferline = require("nord.bufferline")
 local config = require("nord.config")
 
 local M = {}
@@ -23,6 +22,5 @@ function M.load(opts)
 end
 
 M.setup = config.setup
-M.bufferline = bufferline
 
 return M

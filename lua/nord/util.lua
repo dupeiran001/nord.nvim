@@ -106,6 +106,20 @@ function M.resolve(groups)
   return groups
 end
 
+function M.devicon_get(filename, extension)
+  local icon_ok, webDevicons = pcall(require, "nvim-web-devicons")
+  if not icon_ok then
+    return
+  end
+  local _, icon_hl_name = webDevicons.get_icon(filename, extension, { default = true })
+  local _, icon_color = webDevicons.get_icon_color(filename, extension, { default = true })
+
+  return {
+    hl_name = icon_hl_name,
+    color = icon_color,
+  }
+end
+
 -- Simple string interpolation.
 --
 -- Example template: "${name} is ${value}"

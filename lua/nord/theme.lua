@@ -6,6 +6,7 @@ function M.setup(opts)
 
   local colors = require("nord.colors").setup(opts)
   local groups = require("nord.groups").setup(colors, opts)
+  require("nord.autocmds").setup(colors)
 
   -- only needed to clear when not the default colorscheme
   if vim.g.colors_name then
