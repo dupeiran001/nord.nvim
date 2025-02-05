@@ -11,6 +11,7 @@ Table of Contents                                *nord.nvim-table-of-contents*
   - Configuration                          |nord.nvim-nord.nvim-configuration|
   - Overriding colors and highlight group|nord.nvim-nord.nvim-overriding-colors-and-highlight-group|
   - Road Map                                    |nord.nvim-nord.nvim-road-map|
+  - FAQ                                              |nord.nvim-nord.nvim-faq|
 2. Links                                                     |nord.nvim-links|
 
 ==============================================================================
@@ -277,6 +278,27 @@ rainbow_delimiters ~
     })
 <
 
+toggleterm ~
+
+- toggleterm <https://github.com/akinsho/toggleterm.nvim>
+
+>lua
+    require("toggleterm.nvim").setup({
+        highlights = {
+            -- highlights which map to a highlight group name and a table of it's values
+            Normal = {
+                link = "Normal",
+            },
+            NormalFloat = {
+                link = "NormalFloat",
+            },
+            FloatBorder = {
+                link = "FloatBorder",
+            },
+        },
+    })
+<
+
 
 CONFIGURATION                              *nord.nvim-nord.nvim-configuration*
 
@@ -427,6 +449,15 @@ ROAD MAP                                        *nord.nvim-nord.nvim-road-map*
 - fix nord-light theme
 - add more style support (nord-forest, nord-warmer)
 - fix fzf-lua highlights
+
+
+FAQ                                                  *nord.nvim-nord.nvim-faq*
+
+
+MODIFICATION TO THEME DOES NOT TAKE EFFECT ~
+
+- clear cache `~/.cache/nvim/nord-*.json`, and disable `cache` option in nord configuration
+- disable `plugins.auto` and enable `plugins.all`, check whether the plugin is loaded (only available in lazy.nvim)
 
 ==============================================================================
 2. Links                                                     *nord.nvim-links*
