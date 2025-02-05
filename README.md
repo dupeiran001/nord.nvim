@@ -390,3 +390,4 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
 
 - clear cache `~/.cache/nvim/nord-*.json`, and disable `cache` option in nord configuration
 - disable `plugins.auto` and enable `plugins.all`, check whether the plugin is loaded (only available in lazy.nvim)
+
