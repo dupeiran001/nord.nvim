@@ -229,22 +229,6 @@ LuaLine ~
     }
 <
 
-Bufferline ~
-
-- Bufferline <https://github.com/akinsho/bufferline.nvim>
-
-If you find the background of the filetype icons is not correct, this should
-works for you:
-
->lua
-    local bufferline_nord_hl = require("nord").bufferline
-    require('bufferline').setup{
-        -- ... your bufferline config
-        highlights = bufferline_nord_hl
-        -- ... your bufferline config
-    }
-<
-
 fzf_lua ~
 
 - fzf_lua <https://github.com/ibhagwan/fzf-lua>
@@ -443,7 +427,7 @@ To have undercurls show up and in color, add the following to your Tmux
 ROAD MAP                                        *nord.nvim-nord.nvim-road-map*
 
 - refactor plugins that need extra configuration into plugin
-    - support bufferline with extra configuration
+    - support bufferline with extra configuration (**Thanks to the autocmd solution by loctvl842/monokai-pro.nvim**)
     - derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - port vim.nord and vscode.nord highlights
 - fix nord-light theme
