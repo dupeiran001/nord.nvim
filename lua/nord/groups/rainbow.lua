@@ -7,6 +7,7 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     -- rainbow-delimiters
+    RainbowDelimiterNormal = {fg = c.fg},
     RainbowDelimiterRed    = { fg = c.red },
     RainbowDelimiterOrange = { fg = c.orange },
     RainbowDelimiterYellow = { fg = c.yellow },

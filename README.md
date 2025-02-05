@@ -199,7 +199,7 @@ require("fzf-lua").setup({
 ```lua
 require("rainbow-delimiters.setup").setup({
     highlight = {
-		"Normal",
+		"RainbowDelimiterNormal",
 		"RainbowDelimiterOrange",
 		"RainbowDelimiterYellow",
 		"RainbowDelimiterGreen",
