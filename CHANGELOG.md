@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.2.1](https://github.com/dupeiran001/nord.nvim/compare/v0.2.0...v0.2.1) (2025-02-05)
+
+
+### Features
+
+* **neorg:** add highlight for quotes ([908cce9](https://github.com/dupeiran001/nord.nvim/commit/908cce900143ea2a0f7b21d426cf7c2824d72b6e))
+* **neorg:** add neorg support ([eef968c](https://github.com/dupeiran001/nord.nvim/commit/eef968cec72fd138cccf5246b9d2b2050e4bc76a))
+
+
+### Bug Fixes
+
+* **markdown:** fix heading highlight ([e4ac0d9](https://github.com/dupeiran001/nord.nvim/commit/e4ac0d90eb674e40a8560903a253b74ffd062dd0))
+* **markup:** increase markup visibility ([e62a902](https://github.com/dupeiran001/nord.nvim/commit/e62a90246c7ffb5571645ca93afc988405de2789))
+* **treesitter:** fix inconsistency ([bcb4303](https://github.com/dupeiran001/nord.nvim/commit/bcb43030c027a052e50ab90c54857e22fcde0fd3))
+* **trouble.nvim:** fix TroubleNormalNC color inconsistency ([8226b3c](https://github.com/dupeiran001/nord.nvim/commit/8226b3c9e568d248b75ee3c3ef8dabc7c481a965))
+* **whichkey:** increase visibility ([210b4c7](https://github.com/dupeiran001/nord.nvim/commit/210b4c7a7a660c87ecf042ed84a9e71d0d9e5e63))
+
 ## [0.2.0](https://github.com/dupeiran001/nord.nvim/compare/v0.1.1...v0.2.0) (2025-01-27)
 
 
