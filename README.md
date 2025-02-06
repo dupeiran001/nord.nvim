@@ -1,6 +1,9 @@
 # nord.nvim
 
 [![CI](https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml/badge.svg)](https://github.com/dupeiran001/nord.nvim/actions/workflows/ci.yml)
+![GitHub Release](https://img.shields.io/github/v/release/dupeiran001/nord.nvim?labelColor=white&color=violet)
+![GitHub License](https://img.shields.io/github/license/dupeiran001/nord.nvim?labelColor=white)
+
 
 Yet Another Nord Theme for NeoVim
 
@@ -380,6 +383,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
     - [x] support bufferline with extra configuration (**Thanks to the autocmd solution by [loctvl842/monokai-pro.nvim](https://github.com/loctvl842/monokai-pro.nvim/blob/6c15e36834a624a32f46c6db8f9fc063995b24b6/lua/monokai-pro/autocmds.lua#L7-L28)**)
     - [ ] derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - [ ] port vim.nord and vscode.nord highlights
+- [ ] support [leetcode.nvim](https://github.com/kawre/leetcode.nvim)
 - [ ] fix nord-light theme 
 - [ ] add more style support (nord-forest, nord-warmer)
 - [x] fix fzf-lua highlights
