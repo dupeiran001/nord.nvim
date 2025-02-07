@@ -385,6 +385,7 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
 - [ ] port vim.nord and vscode.nord highlights
 - [ ] support [leetcode.nvim](https://github.com/kawre/leetcode.nvim)
 - [ ] fix nord-light theme 
+- [ ] fix cmd line cmp popup window highlight
 - [ ] add more style support (nord-forest, nord-warmer)
 - [x] fix fzf-lua highlights
 
