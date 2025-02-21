@@ -432,12 +432,12 @@ ROAD MAP                                        *nord.nvim-nord.nvim-road-map*
     - support bufferline with extra configuration (**Thanks to the autocmd solution by loctvl842/monokai-pro.nvim**)
     - derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - port vim.nord and vscode.nord highlights
-- fix inlay hint bg in current line
 - fix nord-light theme
 - fix cmd line cmp popup window highlight
 - fix `qfLineNr` and `TodoBgTODO` in `TodoLocList`
 - add more style support (nord-forest, nord-warmer)
 - support leetcode.nvim <https://github.com/kawre/leetcode.nvim> => TODO:waiting for upstream
+- fix inlay hint bg in current line
 - fix fzf-lua highlights
 
 
