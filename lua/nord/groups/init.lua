@@ -24,6 +24,7 @@ M.plugins = {
   ["indentmini.nvim"]         = "indentmini",
   ["lazy.nvim"]               = "lazy",
   ["leap.nvim"]               = "leap",
+  ["leetcode.nvim"]           = "leetcode",
   ["lspsaga.nvim"]            = "lspsaga",
   ["mini.animate"]            = "mini_animate",
   ["mini.clue"]               = "mini_clue",
