@@ -58,6 +58,7 @@ Many amazing features **Thanks to [folke/tokyonight.nvim](https://github.com/fol
 | [indentmini.nvim](https://github.com/nvimdev/indentmini.nvim) | [`indentmini`](lua/nord/groups/indentmini.lua) |
 | [lazy.nvim](https://github.com/folke/lazy.nvim) | [`lazy`](lua/nord/groups/lazy.lua) |
 | [leap.nvim](https://github.com/ggandor/leap.nvim) | [`leap`](lua/nord/groups/leap.lua) |
+| [leetcode.nvim](https://github.com/kawre/leetcode.nvim) | [`leetcode`](lua/nord/groups/leetcode.lua) |
 | [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim) | [`lspsaga`](lua/nord/groups/lspsaga.lua) |
 | [mini.animate](https://github.com/echasnovski/mini.animate) | [`mini_animate`](lua/nord/groups/mini_animate.lua) |
 | [mini.clue](https://github.com/echasnovski/mini.clue) | [`mini_clue`](lua/nord/groups/mini_clue.lua) |
