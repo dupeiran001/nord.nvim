@@ -1,4 +1,4 @@
-*nord.nvim.txt*            For Neovim            Last change: 2025 February 21
+*nord.nvim.txt*              For Neovim             Last change: 2025 April 01
 
 ==============================================================================
 Table of Contents                                *nord.nvim-table-of-contents*
