@@ -110,7 +110,7 @@ function M.get(c, opts)
     markdownH5                  = { link = "htmlH5" },
     markdownH6                  = { link = "htmlH6" },
     qfFileName                  = { fg = c.blue },
-    qfLineNr                    = { fg = c.dark5 },
+    qfLineNr                    = { fg = c.orange },
 
     -- These groups are for the native LSP client. Some other LSP clients may
     -- use these groups, or use their own.
