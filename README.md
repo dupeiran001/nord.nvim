@@ -222,6 +222,40 @@ require("toggleterm.nvim").setup({
 
 </details>
 
+<details>
+<summary> neorg </summary>
+
+- [neorg](https://github.com/nvim-neorg/neorg)
+
+**neorg** plugin is setting the highlights for the heading prefix, so we have to modify the color group to make our definition work
+
+```lua
+require("neorg").setup({
+    	load = {
+			["core.defaults"] = {},
+			["core.concealer"] = {
+				config = {
+					icon_preset = "diamond",
+					icons = {
+						heading = {
+							highlights = {
+								"@neorg.headings.1.prefix.norg",
+								"@neorg.headings.2.prefix.norg",
+								"@neorg.headings.3.prefix.norg",
+								"@neorg.headings.4.prefix.norg",
+								"@neorg.headings.5.prefix.norg",
+								"@neorg.headings.6.prefix.norg",
+							},
+						},
+					},
+				},
+			},
+    }
+})
+```
+
+</details>
+
 ## Configuration
 
 **Make Sure `setup` is called before setting `colorscheme nord`, or default configuration will be applied**
