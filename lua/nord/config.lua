@@ -1,6 +1,6 @@
 local M = {}
 
-M.version = "0.2.1" -- x-release-please-version
+M.version = "0.2.2" -- x-release-please-version
 
 ---@class nord.Config
 M.defaults = {
