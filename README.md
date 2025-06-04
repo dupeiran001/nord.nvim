@@ -45,6 +45,7 @@ Many amazing features **Thanks to [folke/tokyonight.nvim](https://github.com/fol
 | [copilot.lua](https://github.com/zbirenbaum/copilot.lua) | [`copilot`](lua/nord/groups/copilot.lua) |
 | [nvim-dap](https://github.com/mfussenegger/nvim-dap) | [`dap`](lua/nord/groups/dap.lua) |
 | [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim) | [`dashboard`](lua/nord/groups/dashboard.lua) |
+| [diffview.nvim](https://github.com/sindrets/diffview.nvim) | [`diffview`](lua/nord/groups/diffview.lua) |
 | [flash.nvim](https://github.com/folke/flash.nvim) | [`flash`](lua/nord/groups/flash.lua) |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua) | [`fzf`](lua/nord/groups/fzf.lua) |
 | [vim-gitgutter](https://github.com/airblade/vim-gitgutter) | [`gitgutter`](lua/nord/groups/gitgutter.lua) |
