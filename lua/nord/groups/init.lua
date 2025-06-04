@@ -14,6 +14,7 @@ M.plugins = {
   ["codeium.nvim"]            = "codeium",
   ["copilot.lua"]             = "copilot",
   ["dashboard-nvim"]          = "dashboard",
+  ["diffview.nvim"]           = "diffview",
   ["flash.nvim"]              = "flash",
   ["fzf-lua"]                 = "fzf",
   ["gitsigns.nvim"]           = "gitsigns",

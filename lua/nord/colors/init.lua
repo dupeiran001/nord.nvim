@@ -72,7 +72,10 @@ function M.setup(opts)
     add = colors.nord14_gui,
     delete = colors.nord11_gui,
     change = colors.nord9_gui,
-    text = colors.nord9_gui,
+    text = colors.nord3_gui_bright,
+    add_bg = colors.light_green,
+    delete_bg = colors.light_red,
+    change_bg = colors.light_orange,
   }
 
   colors.git.ignore = colors.nord3_gui

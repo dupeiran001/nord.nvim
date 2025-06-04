@@ -19,6 +19,9 @@ local ret = {
   yellow = "#EBCB8B", -- nord13 in palette
   green = "#A3BE8C", -- nord14 in palette
   purple = "#B48EAD", -- nord15 in palette
+  light_green = "#37495E", -- out of plate, used for diff view bg
+  light_red = "#34232C", -- out of plate, used for diff view bg
+  light_orange = "#6B423E", -- out of plate, used for diff view bg
   none = "NONE",
 }
 

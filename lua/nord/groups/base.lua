@@ -17,9 +17,9 @@ function M.get(c, opts)
     CursorColumn                = { bg = c.bg_highlight },                                        -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine                  = { bg = c.bg_highlight },                                        -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue },                                                -- directory names (and other special names in listings)
-    DiffAdd                     = { bg = c.diff.add },                                            -- diff mode: Added line |diff.txt|
-    DiffChange                  = { bg = c.diff.change },                                         -- diff mode: Changed line |diff.txt|
-    DiffDelete                  = { bg = c.diff.delete },                                         -- diff mode: Deleted line |diff.txt|
+    DiffAdd                     = { bg = c.diff.add_bg },                                            -- diff mode: Added line |diff.txt|
+    DiffChange                  = { bg = c.diff.change_bg },                                         -- diff mode: Changed line |diff.txt|
+    DiffDelete                  = { bg = c.diff.delete_bg, fg = c.fg_gutter },                                         -- diff mode: Deleted line |diff.txt|
     DiffText                    = { bg = c.diff.text },                                           -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer                 = { fg = c.bg },                                                  -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     ErrorMsg                    = { fg = c.error },                                               -- error messages on the command line
@@ -38,7 +38,7 @@ function M.get(c, opts)
     ModeMsg                     = { fg = c.fg_dark, bold = true },                                                            -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea                     = { fg = c.fg_dark },                                                                         -- Area for messages and cmdline
     MoreMsg                     = { fg = c.blue },                                                                            -- |more-prompt|
-    NonText                     = { fg = c.dark3 },                                                                           -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+    NonText                     = { fg = c.dark3, bg = c.none },                                                                           -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal                      = { fg = c.fg, bg = opts.transparent and c.none or c.bg },                                    -- normal text
     NormalNC                    = { fg = c.fg, bg = opts.transparent and c.none or opts.dim_inactive and c.bg_dark or c.bg }, -- normal text in non-current windows
     NormalSB                    = { fg = c.fg_sidebar, bg = c.bg_sidebar },                                                   -- normal text in sidebar

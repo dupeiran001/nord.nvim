@@ -20,6 +20,9 @@ local ret = {
   nord13_gui = palette.yellow, -- nord13 in palette
   nord14_gui = palette.green, -- nord14 in palette
   nord15_gui = palette.purple, -- nord15 in palette
+  light_green = palette.light_green, -- out of palette
+  light_red = palette.light_red, -- out of palette
+  light_orange = palette.light_orange, -- out of palette
   none = "NONE",
 }
 return ret
