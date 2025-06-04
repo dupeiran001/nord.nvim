@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.2](https://github.com/dupeiran001/nord.nvim/compare/v0.2.1...v0.2.2) (2025-06-04)
+
+
+### Features
+
+* **groups:** support leetcode.nvim ([605795e](https://github.com/dupeiran001/nord.nvim/commit/605795e0b4a7f4beb018697d4caa85ceb2775cca))
+
+
+### Bug Fixes
+
+* **incsearch:** increase search visibility ([b028f35](https://github.com/dupeiran001/nord.nvim/commit/b028f355984fafb094a2a3a8f68d488dc8fa61e7))
+* **inlayhint:** fix inlay hint bg inconsistency ([ebabe24](https://github.com/dupeiran001/nord.nvim/commit/ebabe243fc51b0665b97c3632cc89d37ef762b82))
+* **neorg:** fix neorg color group name changes ([6cc8b92](https://github.com/dupeiran001/nord.nvim/commit/6cc8b92e5187eadc4ddbb6b293709c3fe2017db4))
+* **qfList:** increase line nr visibility ([39f4621](https://github.com/dupeiran001/nord.nvim/commit/39f4621859fbcca55aaa1dc9958c3cb036bf5bc3))
+
 ## [0.2.1](https://github.com/dupeiran001/nord.nvim/compare/v0.2.0...v0.2.1) (2025-02-05)
 
 
