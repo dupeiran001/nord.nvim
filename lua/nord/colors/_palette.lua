@@ -1,4 +1,5 @@
 --- @class NordColors
+-- stylua: ignore
 local ret = {
   --16 colors
   black = "#2E3440",                  -- nord0 in palette
