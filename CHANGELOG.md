@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.2](https://github.com/dupeiran001/nord.nvim/compare/v0.2.2...v0.2.2) (2025-06-27)
+
+
+### Bug Fixes
+
+* fix stylua fmt ([d5f6c67](https://github.com/dupeiran001/nord.nvim/commit/d5f6c676e1439886a39380931e2a832c315949c4))
+* improve diff view color ([5b12c78](https://github.com/dupeiran001/nord.nvim/commit/5b12c786d87f50e97be99060efca1fcf0577845e))
+* lua code style ([0b0c9f1](https://github.com/dupeiran001/nord.nvim/commit/0b0c9f118e983680ddd5b94e9b1fc2b064cc4f7a))
+
 ## [0.2.2](https://github.com/dupeiran001/nord.nvim/compare/v0.2.1...v0.2.2) (2025-06-04)
 
 
