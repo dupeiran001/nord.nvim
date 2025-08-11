@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.2](https://github.com/dupeiran001/nord.nvim/compare/v0.2.2...v0.2.2) (2025-08-11)
+
+
+### Features
+
+* light theme ([e5f6b70](https://github.com/dupeiran001/nord.nvim/commit/e5f6b7046d1c1c96756bb4a04ca70f0c9acd3b74))
+
+
+### Bug Fixes
+
+* fix stylua fmt ([d5f6c67](https://github.com/dupeiran001/nord.nvim/commit/d5f6c676e1439886a39380931e2a832c315949c4))
+* improve diff view color ([5b12c78](https://github.com/dupeiran001/nord.nvim/commit/5b12c786d87f50e97be99060efca1fcf0577845e))
+* light theme ([d61d529](https://github.com/dupeiran001/nord.nvim/commit/d61d529b92d5dc1e76efc56c20733a1e2c30ca45))
+* light theme test ([b282ffd](https://github.com/dupeiran001/nord.nvim/commit/b282ffdda22b54d10d1ca7c66bc641c6ed9b1caa))
+* lua code style ([0b0c9f1](https://github.com/dupeiran001/nord.nvim/commit/0b0c9f118e983680ddd5b94e9b1fc2b064cc4f7a))
+* stylua ([c7a5c6d](https://github.com/dupeiran001/nord.nvim/commit/c7a5c6d08ba127645f4c1e51d161b679302ad272))
+* stylua ([e999f12](https://github.com/dupeiran001/nord.nvim/commit/e999f12ed33cc06f74afa7151c9e83e080dd2b3f))
+
 ## [0.2.2](https://github.com/dupeiran001/nord.nvim/compare/v0.2.1...v0.2.2) (2025-06-04)
 
 
