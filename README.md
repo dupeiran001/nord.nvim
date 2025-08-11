@@ -419,11 +419,11 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::::%p1%{65536}%/%d::%p1%{256}%/%{
     - [x] support bufferline with extra configuration (**Thanks to the autocmd solution by [loctvl842/monokai-pro.nvim](https://github.com/loctvl842/monokai-pro.nvim/blob/6c15e36834a624a32f46c6db8f9fc063995b24b6/lua/monokai-pro/autocmds.lua#L7-L28)**)
     - [ ] derive nvim-webdevicon highlights based on colorscheme with extra configuration
 - [ ] port vim.nord and vscode.nord highlights
-- [ ] fix nord-light theme 
 - [ ] fix cmd line cmp popup window highlight
 - [ ] fix `qfLineNr` and `TodoBgTODO` in `TodoLocList`
 - [ ] add more style support (nord-forest, nord-warmer)
 - [ ] support [leetcode.nvim](https://github.com/kawre/leetcode.nvim) => TODO:waiting for upstream
+- [x] fix nord-light theme 
 - [x] fix inlay hint bg in current line
 - [x] fix fzf-lua highlights
 
