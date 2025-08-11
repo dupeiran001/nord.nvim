@@ -8,6 +8,15 @@ end
 
 ---@param colors ColorScheme
 function M.setup(colors)
+  -- Autocommand to reload colorscheme when vim.o.background changes
+  vim.api.nvim_create_autocmd("OptionSet", {
+    group = augroup("background_change"),
+    pattern = "background",
+    callback = function()
+      require("nord").load({ style = vim.o.background })
+    end,
+  })
+
   -- draw bufferline icons
   vim.api.nvim_create_autocmd({ "ColorScheme", "BufEnter" }, {
     group = augroup("bufferline"),
@@ -24,7 +33,7 @@ function M.setup(colors)
           return
         end
         local bufferline_icon_group =
-          require("nord.autocmds.bufferline").setup_bufferline_icon(icon.hl_name, icon.color, colors)
+            require("nord.autocmds.bufferline").setup_bufferline_icon(icon.hl_name, icon.color, colors)
 
         for group, hl in pairs(bufferline_icon_group) do
           hl = type(hl) == "string" and { link = hl } or hl

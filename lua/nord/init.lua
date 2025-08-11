@@ -7,16 +7,18 @@ M.styles = {}
 ---@param opts? nord.Config
 function M.load(opts)
   opts = require("nord.config").extend(opts)
-  -- Determine the background based on the chosen style
-  local style_bg = opts.style == "light" and "light" or "dark"
+
+  -- Determine the style based on vim.o.background if not explicitly set in opts
+  if not opts.style then
+    opts.style = vim.o.background == "light" and "light" or "dark"
+  end
 
   -- Always set the background to the determined style
-  vim.o.background = style_bg
+  vim.o.background = opts.style == "light" and "light" or "dark"
 
-  -- Cache the style for later reference (if needed, though simplified logic might reduce its importance)
+  -- Cache the style for later reference
   M.styles[vim.o.background] = opts.style
 
-  -- Load and apply the theme with the chosen options
   return require("nord.theme").setup(opts)
 end
 
