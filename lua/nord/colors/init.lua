@@ -89,12 +89,12 @@ function M.setup(opts)
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = opts.styles.sidebars == "transparent" and colors.none
-      or opts.styles.sidebars == "dark" and colors.nord0_gui
-      or colors.bg
+    or opts.styles.sidebars == "dark" and colors.nord0_gui
+    or colors.bg
 
   colors.bg_float = opts.styles.floats == "transparent" and colors.none
-      or opts.styles.floats == "dark" and colors.bg_dark
-      or colors.bg
+    or opts.styles.floats == "dark" and colors.bg_dark
+    or colors.bg
 
   colors.bg_visual = Util.blend_bg(colors.blue0, 0.4)
   colors.bg_search = colors.blue0

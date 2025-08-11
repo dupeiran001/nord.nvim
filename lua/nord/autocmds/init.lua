@@ -33,7 +33,7 @@ function M.setup(colors)
           return
         end
         local bufferline_icon_group =
-            require("nord.autocmds.bufferline").setup_bufferline_icon(icon.hl_name, icon.color, colors)
+          require("nord.autocmds.bufferline").setup_bufferline_icon(icon.hl_name, icon.color, colors)
 
         for group, hl in pairs(bufferline_icon_group) do
           hl = type(hl) == "string" and { link = hl } or hl
